@@ -362,7 +362,7 @@ han: false
 # Disqus
 disqus:
   enable: true
-  shortname: #tripleCC
+  shortname: tripleCC
   count: true
 
 # Hypercomments
