@@ -12,11 +12,13 @@
   {% include '_third-party/analytics/index.swig' %}
   <script type="text/javascript">
   // https://stackoverflow.com/questions/4723213/detect-http-or-https-then-force-https-in-javascript
-    var host = "triplecc.github.io";
+    var host = "triplecc.github.io"
+    console.log(window.location.host, window.location.protocol)
     if ((host == window.location.host) && (window.location.protocol != "https:")) {
       console.log('切到 https 站点...')
-      window.location.protocol = "https:";
+      window.location.protocol = "https:"
     }
+    console.log('加载完毕.')
   </script>
 </head>
 
