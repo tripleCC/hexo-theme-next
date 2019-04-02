@@ -13,7 +13,8 @@
   <script type="text/javascript">
     var host = "triplecc.github.io";
     if ((host == window.location.host) && (window.location.protocol != "https:"))
-        window.location.protocol = "https";
+      console.log('切到 https 站点...')
+      window.location.protocol = "https";
   </script>
 </head>
 
