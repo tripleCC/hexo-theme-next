@@ -11,10 +11,12 @@
   <title>{% block title %}{% endblock %}</title>
   {% include '_third-party/analytics/index.swig' %}
   <script type="text/javascript">
+  // https://stackoverflow.com/questions/4723213/detect-http-or-https-then-force-https-in-javascript
     var host = "triplecc.github.io";
-    if ((host == window.location.host) && (window.location.protocol != "https:"))
+    if ((host == window.location.host) && (window.location.protocol != "https:")) {
       console.log('切到 https 站点...')
-      window.location.protocol = "https";
+      window.location.protocol = "https:";
+    }
   </script>
 </head>
 
